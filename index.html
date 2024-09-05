@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KloudWiz | Cloud Solutions</title>
+    <title>KloudWiz | Cloud Simplified</title>
+
+    <!-- Favicon for the browser window -->
+    <link rel="icon" href="logo_cloud_light.png" type="image/png">
+
     <style>
         body {
             margin: 0;
@@ -11,21 +15,11 @@
             background-color: #f9f9f9;
             color: #333;
         }
-        header {
-            background-color: #1e73be;
-            padding: 20px 0;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 48px;
-        }
         .hero {
             position: relative; /* Make the hero a positioned container */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cloud.jpg') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background_cloud.jpg') no-repeat center center;
             background-size: cover;
-            height: 80vh;
+            height: 90vh;
             color: white;
             display: flex;
             justify-content: center;
@@ -92,17 +86,24 @@
             padding: 5px;
             border-radius: 5px;
         }
+        /* CSS for logo positioning */
+        .logo {
+            position: absolute;
+            top: 5px; /* Adjust distance from the top */
+            left: 20px; /* Adjust distance from the left */
+            width: 150px; /* Restrict logo size */
+            height: 150px;
+            object-fit: contain; /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>KloudWiz</h1>
-    </header>
-
     <section class="hero">
+        <!-- Logo placed at the top-left corner of the hero section -->
+        <img src="logo_light.png" alt="KloudWiz Logo" class="logo">
         <div>
-            <h2>Your Cloud, Optimized</h2>
+            <h2>Your Cloud, Simplified</h2>
             <p>Streamlining Cloud Operations & Cost Management with Automation</p>
             <button class="cta-button">Get Started</button>
         </div>
